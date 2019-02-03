@@ -52,8 +52,7 @@ class Game
                     {
                         correctGuessBuffer[idx] = guess;
                         correctGuess++;
-                    }
-                    
+                    }    
                 }
                 else 
                 {
@@ -66,7 +65,7 @@ class Game
                             break;
                         }
                     }
-                    if(flag == 0)
+                    if(flagcorrectGuessBuffer == 0)
                         wrongCount++;
                 }
             }

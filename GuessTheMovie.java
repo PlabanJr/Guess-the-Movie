@@ -10,10 +10,10 @@ class GuessTheMovie
         movieName = new String();
         welcomeNote();
         movieName = getMovieName();
-        // System.out.println(movieName);
+
         if(!movieName.equals("Not Found"))
             playGame();
-    }
+    }   
 
     public static void welcomeNote() 
     {
@@ -46,9 +46,9 @@ class GuessTheMovie
     public static String getRandomMovie(File file) throws FileNotFoundException
     {
         String randomMovieName = null;
-        // Random rand = new Random();
         Random rand = new Random(System.currentTimeMillis());
         int count = 0;
+
         for(Scanner sc = new Scanner(file); sc.hasNext(); )
         {
             count = rand.nextInt(25) + 1;
